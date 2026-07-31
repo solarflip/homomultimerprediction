@@ -1,0 +1,5 @@
+2026-07-31 11:21:41Performing split: 70.0/10.0/20.0
+Read 19199 cluster
+Clusters in train: 13439
+Clusters in val: 1901
+Clusters in test: 3859

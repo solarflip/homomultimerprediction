@@ -1,0 +1,14 @@
+# folders
+.scripts/*
+__pycache__
+
+# filetypes
+*.csv
+*.pkl
+*.zip
+*.gz
+*.pdb
+
+# files
+batch_download.sh
+test.py
