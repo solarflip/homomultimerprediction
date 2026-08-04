@@ -1,5 +1,5 @@
 # Dataset
-
+## Base and Structure Dataset
 Original dataset from seq2symm (http://files.ipd.uw.edu/pub/seq2symm/datasets.zip)
 ```sh
 curl http://files.ipd.uw.edu/pub/seq2symm/datasets.zip -o dataset.zip
@@ -14,4 +14,17 @@ and downloaded using
 ```sh
 ./pdb/batch_download.sh -f homomer_pdbids_fullset.txt -o pdb/fullset -p
 ```
+
+- [ ] unzip
+- [ ] select single chain
+
+## Sequence Dataset
+
+- [ ] extract from pdb?
+
+## ESM-2 Dataset
+
+- [ ] embed using `esm-extract`
+
+## Interface Residue Dataset
 

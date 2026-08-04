@@ -14,10 +14,10 @@ from src.utils.constants import (
 )
 
 class MultimodalDataset(Dataset):
-    def __init__(self, pdb_dir : Path, metadata_file : Path, cluster_ids : Path):
+    def __init__(self, esm2_dir : Path, metadata_file : Path, cluster_ids : Path):
         """
         PARAMS:
-            - pdb_dir Path, Path to the directory where the single_chained pdb files are; <directory>/xzy.pdb
+            - esm2_dir Path, Path to the directory where the esm2 embeddings are
             - metadata_file, Path to the file that contains a mapping from structure to label
             - cluster_ids, Path to the cluster_ids that are relevant for this dataset
 
@@ -37,11 +37,9 @@ class MultimodalDataset(Dataset):
 
         # read metadata_file
         metadata = pd.read_csv(metadata_file)
-        #print(metadata.shape)
 
         # create subset with relevant ones
         metadata_subset = metadata[metadata["CLUSTER"].isin(relevant_ids)]
-        #print(metadata_subset.shape)
 
         # create self.data
         self.data = []
